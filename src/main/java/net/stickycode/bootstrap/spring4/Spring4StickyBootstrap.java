@@ -93,7 +93,7 @@ public class Spring4StickyBootstrap
 
   @Override
   public boolean canFind(Class<?> type) {
-    return context.getBeanNamesForType(type).length > 0;
+    return getContext().getBeanNamesForType(type).length > 0;
   }
 
   @Override
